@@ -11800,7 +11800,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -11852,7 +11852,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -11915,7 +11915,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -11997,7 +11997,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12068,7 +12068,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12174,7 +12174,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12247,7 +12247,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12260,8 +12260,8 @@ Testing set has 95 samples.
 
 <span class="c1"># TODO: Initialize the three models</span>
 <span class="n">clf_A</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">clf_B</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">n_jobs</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">clf_C</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">n_jobs</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">clf_B</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
+<span class="n">clf_C</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
 
 <span class="c1"># TODO: Set up the training set sizes</span>
 <span class="n">X_train_100</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[:</span><span class="mi">100</span><span class="p">]</span>
@@ -12295,74 +12295,74 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0028 seconds
-Made predictions in 0.0011 seconds.
+Trained model in 0.0047 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.8550.
-Made predictions in 0.0011 seconds.
+Made predictions in 0.0007 seconds.
 F1 score for test set: 0.7481.
 
 
 Training a GaussianNB using a training set size of 200. . .
-Trained model in 0.0024 seconds
-Made predictions in 0.0008 seconds.
-F1 score for training set: 0.8321.
+Trained model in 0.0021 seconds
 Made predictions in 0.0009 seconds.
+F1 score for training set: 0.8321.
+Made predictions in 0.0006 seconds.
 F1 score for test set: 0.7132.
 
 
 Training a GaussianNB using a training set size of 300. . .
-Trained model in 0.0019 seconds
-Made predictions in 0.0012 seconds.
+Trained model in 0.0020 seconds
+Made predictions in 0.0011 seconds.
 F1 score for training set: 0.8088.
-Made predictions in 0.0008 seconds.
+Made predictions in 0.0005 seconds.
 F1 score for test set: 0.7500.
 
 
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0011 seconds
-Made predictions in 0.1503 seconds.
+Trained model in 0.0066 seconds
+Made predictions in 0.0060 seconds.
 F1 score for training set: 0.7972.
-Made predictions in 0.1383 seconds.
+Made predictions in 0.0017 seconds.
 F1 score for test set: 0.7068.
 
 
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0016 seconds
-Made predictions in 0.1395 seconds.
+Trained model in 0.0009 seconds
+Made predictions in 0.0037 seconds.
 F1 score for training set: 0.8571.
-Made predictions in 0.1340 seconds.
+Made predictions in 0.0029 seconds.
 F1 score for test set: 0.7121.
 
 
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0026 seconds
-Made predictions in 0.1396 seconds.
+Trained model in 0.0016 seconds
+Made predictions in 0.0089 seconds.
 F1 score for training set: 0.8722.
-Made predictions in 0.1331 seconds.
+Made predictions in 0.0031 seconds.
 F1 score for test set: 0.7482.
 
 
 Training a RandomForestClassifier using a training set size of 100. . .
-Trained model in 0.2138 seconds
-Made predictions in 0.1428 seconds.
+Trained model in 0.0502 seconds
+Made predictions in 0.0031 seconds.
 F1 score for training set: 0.9921.
-Made predictions in 0.1367 seconds.
+Made predictions in 0.0017 seconds.
 F1 score for test set: 0.7541.
 
 
 Training a RandomForestClassifier using a training set size of 200. . .
-Trained model in 0.1945 seconds
-Made predictions in 0.1490 seconds.
+Trained model in 0.0887 seconds
+Made predictions in 0.0039 seconds.
 F1 score for training set: 0.9887.
-Made predictions in 0.1390 seconds.
+Made predictions in 0.0046 seconds.
 F1 score for test set: 0.7368.
 
 
 Training a RandomForestClassifier using a training set size of 300. . .
-Trained model in 0.1728 seconds
-Made predictions in 0.1459 seconds.
+Trained model in 0.0747 seconds
+Made predictions in 0.0039 seconds.
 F1 score for training set: 0.9951.
-Made predictions in 0.1427 seconds.
+Made predictions in 0.0035 seconds.
 F1 score for test set: 0.7970.
 
 
@@ -12540,7 +12540,7 @@ F1 score for test set: 0.7970.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> The F1 score determines how good the model will make the prediction; where the higher F1 score, the better the model is. Therefore, we will pick our final model to be the one with the highest F1 score. We start to solve the problem by looking at the statistics of the data and determine a few candidate methods which can be used. The data will be break up into k equal sized sets and for each method, we will train the model on the k-1 sets and use the kth set to make prediction and calculate the F1 score. This process is repeated k times and the average of k F1 scores will be the score assigned to that model. Some method might have few parameters that can be tuned. For such method, we will also pick out a few possible parameters with few values to turn the model. During the tuning stage, all combinations of the parameter and values are repeatedly trained on k-1 sets of data and evulated on the kth set of data. In the end, we will have a bunch of models using different methods as well as with different tuning parameters. All of them have their own F1 score and we can pick the one model with the highest F1 score to be the final model.</p>
+<p><strong>Answer: </strong> Random forest is a method combining the predictions from mutilple decision trees into one prediction. Decision tree is a method which splits data according to one of the features. After mutiple splits, the data remains in each tree node will be more and more pure (i.e. majority of the instances will be in one class). When there is only one class left in the node, the tree will make a leaf as that class. The prediction of a decision tree is as simple as going through each tree node and use the leaf class as the prediction. However, a slight change in the trainig data will result to a completely different tree. Thus, decision tree by itself is not a robust method to use in everyday life. Random forest improves it in two ways. First, it train mutiple trees from randomly sampled training set data with replacement. Therefore mutiple trees can vote on their predictions without worrying about sensitivity of the training data. In addition, when there is a feature strongly determines the result, all trees wil tend to use that feature much more often than others and cause all trees to be very simular. Second, random forest remove the effect of corrolated trees via ramdonly selects a set of features during the tree spliting process. With both improvements, random forests train mutiple trees in the training stage and make its prediction from the predictions of the majority of the predictions from its trees.</p>
 
 </div>
 </div>
@@ -12571,7 +12571,7 @@ F1 score for test set: 0.7970.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -12624,7 +12624,7 @@ F1 score for test set: 0.7970.
             oob_score=False, random_state=50, verbose=0, warm_start=False)
 Made predictions in 0.1626 seconds.
 Tuned model has a training F1 score of 0.8696.
-Made predictions in 0.1572 seconds.
+Made predictions in 0.1130 seconds.
 Tuned model has a testing F1 score of 0.8000.
 </pre>
 </div>
