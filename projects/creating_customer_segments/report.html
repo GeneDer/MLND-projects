@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11812,6 +11812,14 @@ div#notebook {
 
 
 <div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/GeneDerSu/anaconda/lib/python2.7/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
+  warnings.warn(&#39;Matplotlib is building the font cache using fc-list. This may take a moment.&#39;)
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Wholesale customers dataset has 440 samples with 6 features each.
 </pre>
@@ -11835,7 +11843,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
@@ -11962,7 +11970,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12061,7 +12069,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> First sample get a lots of detergents paper than any other businesses, it might be representing a lundry shop. Second sample gets a lot of fresh, milk, and grocery, it might be representing a cafe. Third sample gets a lot of frozen, it might be representing a fastfood restaurant.</p>
+<p><strong>Answer:</strong> First sample gets <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code> way more than the means, it might be representing a big hotel. Second sample gets <code>Fresh</code>, <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code> way more than the means, it might be representing a cafe. Third sample gets <code>Fresh</code>, <code>Milk</code>, <code>Grocery</code>, and<code>Frozen</code> way more than the means, it might be representing a fastfood restaurant.</p>
 
 </div>
 </div>
@@ -12088,7 +12096,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Make a copy of the DataFrame, using the &#39;drop&#39; function to drop the given feature</span>
@@ -12144,7 +12152,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> I attempt to predict <code>Detergents_Paper</code>. The prediction score is 0.763468783139. Yes, this feature is necessary for identifying customers' spending habits because it has a very high score.</p>
+<p><strong>Answer:</strong> I attempt to predict <code>Detergents_Paper</code>. The prediction score is 0.763468783139. No, this feature is not necessary for identifying customers' spending habits because it is highly correlated with other features and can be predicted from them.</p>
 
 </div>
 </div>
@@ -12161,7 +12169,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -13941,7 +13949,7 @@ Ny7+WPF7swAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> <code>Gorcery</code> and <code>Milk</code>, <code>Detergents_Paper</code> and <code>Milk</code>, and <code>Detergents_Paper</code> and <code>Gorcery</code> are the pair of features that exhibit some degree of correlation. Yes, there are two features correlated to <code>Detergents_Paper</code> so it had a high score on the regression model. All those features have a positive skewed normal distrubtion.</p>
+<p><strong>Answer:</strong> <code>Gorcery</code> and <code>Milk</code>, <code>Detergents_Paper</code> and <code>Milk</code>, and <code>Detergents_Paper</code> and <code>Gorcery</code> are the pair of features that exhibit some degree of correlation. Yes, there are two features correlated to <code>Detergents_Paper</code> so it had a high score on the regression model. The features seem to have a log-normal distrubtion.</p>
 
 </div>
 </div>
@@ -13973,7 +13981,7 @@ Ny7+WPF7swAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -17715,7 +17723,7 @@ AAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -17806,10 +17814,11 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
+<span class="n">count</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">log_data</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
     
     <span class="c1"># TODO: Calculate Q1 (25th percentile of the data) for the given feature</span>
@@ -17823,7 +17832,17 @@ Once you have performed this implementation, the dataset will be stored in the v
     
     <span class="c1"># Display the outliers</span>
     <span class="k">print</span> <span class="s2">&quot;Data points considered outliers for the feature &#39;{}&#39;:&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="o">~</span><span class="p">((</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">))])</span>
+    <span class="n">outliers</span> <span class="o">=</span> <span class="n">log_data</span><span class="p">[</span><span class="o">~</span><span class="p">((</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="n">step</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">log_data</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="n">step</span><span class="p">))]</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">outliers</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">count</span><span class="p">:</span>
+            <span class="n">count</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">count</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s1">&#39;Outliers considered in multiple features:&#39;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">count</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">count</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> is considered outlier in </span><span class="si">%s</span><span class="s1"> features&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">count</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
     
 <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
 <span class="n">outliers</span>  <span class="o">=</span> <span class="p">[]</span>
@@ -18458,6 +18477,18 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 </div>
 
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Outliers considered in multiple features:
+128 is considered outlier in 2 features
+154 is considered outlier in 3 features
+65 is considered outlier in 2 features
+66 is considered outlier in 2 features
+75 is considered outlier in 2 features
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -18477,7 +18508,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Yes, there are some points such as 75 and 154 that's considered outliers for more than one feature. I'm debating if those points should be removed. On one hand, they might just be very tiny businesses or very large businesses which represent the wide range of different types of customers we have in the data. On the other hand, they might mess up our analysis if we keep them in the data. I feel I should keep them in the data for now and if its necessary to remove them after we see the result of the analysis, we can go back and remove them.</p>
+<p><strong>Answer:</strong> Yes, point 65, 66, 75, 128 and 154 are considered outliers for more than one features. I'm debating if those points should be removed. On one hand, they might just be very tiny businesses or very large businesses which represent the wide range of different types of customers we have in the data. On the other hand, they might mess up our analysis if we keep them in the data. I feel I should keep them in the data for now and if its necessary to remove them after we see the result of the analysis, we can go back and remove them.</p>
 
 </div>
 </div>
@@ -18509,7 +18540,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with the same number of dimensions as features</span>
@@ -18912,7 +18943,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> The first two principal components have 0.719 as their total explained variance. The first four principal components have 0.9314 as their total explained variance. The first dimension best represents the spending in <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code>. The second dimension best represents the spending in <code>Fresh</code>, <code>Frozen</code>, and <code>Delicatessen</code>. The third dimension feels like the differences between <code>Fresh</code> nad <code>Delicatessen</code>. The fourth dimension feels like the difference between <code>Forzen</code> and <code>Delicatessen</code>.</p>
+<p><strong>Answer:</strong> The first two principal components have 0.719 as their total explained variance. The first four principal components have 0.9314 as their total explained variance. The first dimension best represents the large spendings in <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code>, small spendings in <code>Delicatessen</code>, and is negatively correlated to <code>Fresh</code> and <code>Frozen</code>. The second dimension best represents the large spendings in <code>Fresh</code>, <code>Frozen</code>, and <code>Delicatessen</code> with small portions in <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code>. The third dimension best represents the large positive spendings in <code>Fresh</code>, large negative spendings in <code>Delicatessen</code>, median positive spendings in <code>Detergents_Paper</code>, median negative spendings in <code>Frozen</code>, and small positive spendings in <code>Grocery</code> and small negative spendings in <code>Milk</code>. The fourth dimension best represents the large spendings in <code>Frozen</code>, small spendings in <code>Milk</code>, <code>Grocery</code>, and <code>Detergents_Paper</code>, and is negatively correlated to <code>Fresh</code> and <code>Delicatessen</code>.</p>
 
 </div>
 </div>
@@ -18929,7 +18960,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after having a PCA transformation applied</span>
@@ -19017,7 +19048,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply PCA by fitting the good data with only two dimensions</span>
@@ -19051,7 +19082,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display sample log-data after applying PCA transformation in two dimensions</span>
@@ -19130,7 +19161,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> K-means is a simple one parameter algorithm that's very scalable. Gaussian Mixture Model can be used to find more complicated clusterings. Just for the simplicity I will always try K-means first. If K-means didn't work out as how I expected, I will try other methods.</p>
+<p><strong>Answer:</strong> K-means is a simple one parameter algorithm that's very scalable and is hard assignment of points to each cluster. Gaussian Mixture Model can be used to find more complicated clusterings and is soft assignment of points with probabilities of being to each cluster. Just for the simplicity I will always try K-means first. If K-means didn't work out as how I expected, I will try other methods.</p>
 
 </div>
 </div>
@@ -19158,7 +19189,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Apply your clustering algorithm of choice to the reduced data </span>
@@ -19259,7 +19290,7 @@ zKw/vh/eFsBqM/v0vCcT8oOQzgV8eVAfX/c9wGbn3Ngg6hduQj0PHvf/w1eObxz6/wRRt3AU6nlw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the results of the clustering from implementation</span>
@@ -20094,7 +20125,7 @@ IDJIgAAAAABEBgkQAAAAgMggAQIAAAAQGSRAAAAAACLj/wNY23WTip6n2AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Inverse transform the centers</span>
@@ -20198,7 +20229,7 @@ IDJIgAAAAABEBgkQAAAAgMggAQIAAAAQGSRAAAAAACLj/wNY23WTip6n2AAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the predictions</span>
@@ -20313,7 +20344,7 @@ high <code>Fresh</code>, and <code>Frozen</code> and low <code>Detergents_Paper<
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the clustering results based on &#39;Channel&#39; data</span>
